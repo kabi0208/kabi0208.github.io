@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>標記地圖</title>
+        <style>
+            #map {
+                width:900px;
+                height:750px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        
+        <script type="text/javascript">
+            function initMap() {
+            const location = { lat: 25.049421357294754, lng:121.53800471111859 }; //緯度 與 經度 // 警衛室 23.55858345988535, 120.47197754406302
+            //display map
+            const map = new google.maps.Map(
+                document.getElementById("map"), {
+                    center: location,
+                    zoom: 17
+                }
+            );
+            //mark 1 ver
+            const marker0 = new google.maps.Marker({
+                position: location,
+                map: map,// important
+                title:'中山女中'
+            });
+
+            //mark 2 ver
+            var marker1 = new google.maps.Marker({
+                position: { lat: 25.048634058028778, lng:121.53777940554964 },
+                title:'公車中山女中站',
+                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+            marker1.setMap(map);// important
+
+            //marker1.setMap(null); //delete mark
+        }
+        window.initMap = initMap;
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLM8UnSHpFjzusSDJRugQHJqZVhGJoCFs&callback=initMap"></script>
+
+
+    </body>
+</html>

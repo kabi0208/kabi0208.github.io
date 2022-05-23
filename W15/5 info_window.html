@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>資訊框</title>
+        <style>
+            #map {
+                width:900px;
+                height:750px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        
+        <script type="text/javascript">
+            function initMap() {
+            const location = { lat: 25.049421357294754, lng:121.53800471111859 }; //緯度 與 經度 // 警衛室 23.55858345988535, 120.47197754406302
+            //display map
+            const map = new google.maps.Map(
+                document.getElementById("map"), {
+                    center: location,
+                    zoom: 17
+                }
+            );
+            //marker
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,// use map
+                title:'中山女中',
+            });
+            const marker1 = new google.maps.Marker({
+                position: { lat: 25.048634058028778, lng:121.53777940554964 },
+                map: map,// use map
+                title:'公車中山女中站',
+                animation: google.maps.Animation.BOUNCE // 彈跳特效
+            });
+            //infowindow
+            var infowindow = new google.maps.InfoWindow({
+                content: '臺北市立中山女子高級中學<hr>簡稱中山女高或中山女中，舊稱臺北第三高女、北二女中，創立於1897年，是一所位於臺北市中山區的女子高中北市六省中之一，亦為臺北市三所公立女子高中之一（另外兩所為北一女中、景美女中）。', //可以用html語言
+                minWidth: 500,//最小寬度
+            });
+            var infowindow1 = new google.maps.InfoWindow({
+                content: '公車站<hr>普通的公車站', 
+                maxWidth: 100,//最大寬度
+            });
+            // 監聽事件
+            marker.addListener('click', function() {//點選 marker 打開資訊視窗事件
+                infowindow.open(map,marker); 
+            });
+            marker1.addListener('click', function() {
+                infowindow1.open(map,marker1); 
+            });
+        }
+        window.initMap = initMap;
+
+        
+
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLM8UnSHpFjzusSDJRugQHJqZVhGJoCFs&callback=initMap"></script>
+
+
+    </body>
+</html>
