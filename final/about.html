@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>網頁</title>
+        <style>
+            body{background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("image/background.png") no-repeat 0% 20%/ cover;}
+            ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;position: fixed; top: 0; width: 100%;}
+            li a { float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+            li a:hover:not(.active) {background-color: #111;}
+            .active {background-color: #545454;}
+            .center {
+                padding: 10px;display: block;margin:0 auto;
+                width: 50%;border: 3px solid rgb(252, 167, 49);padding: 10px;}
+            .a:link {color: red;}
+            .a:visited {color: green;}
+            .a:hover {color: hotpink;}
+            .a:active {color: blue;}
+            .g{text-align: center; text-shadow:12px 8px 5px gray, 0.6em 0.5em 0.1em silver}
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.htm">首頁</a></li>
+            <li><a href="game.html">遊戲介紹</a></li>
+            <li style="float:right"><a class="active" href="about.html">關於我們</a></li>
+        </ul>
+        <h1><br></h1>
+        <h1 class="g">參考資料</h1>
+        
+        <div class="center">
+            <a href="https://bootstrap5.hexschool.com/docs/5.0/components/carousel/" style="width: 100%;"class="a">Reference1</a><br>
+            <a href="https://pixabay.com/images/search/couple/?pagi=4&" style="width: 100%;"class="a">Reference2</a><br>
+            <a href="https://www.w3schools.com/css/css_align.asp" style="width: 100%;"class="a">Reference3</a><br>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
