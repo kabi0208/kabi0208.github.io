@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>HW9 Web Page</title>
+        <style>
+	        iframe {padding:10px}
+            body{background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("image/background.png") no-repeat 0% 20%/ cover;}
+            ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;position: fixed; top: 0; width: 100%;}
+            li a { float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+            li a:hover:not(.active) {background-color: #111;}
+            .active {background-color: #545454;}
+            .center {
+                background-color: rgba(255, 255, 255, 0.6);
+                padding: 10px;display: block;margin:0 auto;
+                width: 50%;border: 3px solid rgb(252, 167, 49);padding: 10px;}
+            .active {background-color: #545454;}
+            .a:link, .a:visited {background-color: white;color: black;border: 2px solid rgb(252, 167, 49);padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;}
+            .a:hover, .a:active {background-color: rgb(252, 167, 49);color: white;}
+            .g{text-align: center; text-shadow:12px 8px 5px gray, 0.6em 0.5em 0.1em silver}
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="back.html">Background</a></li>
+            <li><a href="hobby.html">Current interests</a></li>
+            <li><a href="future.html">Future goals</a></li>
+            <li style="float:right"><a class="active" href="about.html">About</a></li>
+        </ul>
+        <h1><br></h1>
+        <h1><br></h1>
+        <h1 class="g">Hometown</h1>
+        <div class="center">
+            <h4>I was born in Taipei City in 2002 and lived in New Taipei City until I went to college.</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231391.76253771462!2d121.50637795000002!3d25.017226400000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d5538b0b6645f%3A0x5aa90dfa6620edc0!2z5paw5YyX5biC!5e0!3m2!1szh-TW!2stw!4v1668857975070!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h1><br></h1>
+        <h1 class="g">Family</h1>
+        <div class="center">
+            <h4>There are four people in my family: My father, my mother, my brother, and me.</h4>
+            <h4>My brother is two years older than me, he is a student major in architecture from National Taiwan University of Science and Technology.</h4>
+            <h4>My mother is a fashion editor, and my father is a civil servant.</h4>
+        </div>
+        <h1><br></h1>
+        <h1 class="g">School</h1>
+        <div class="center">
+            <h4>I studied at Our Lady Of Providence High School in junior high school, and studied at Taipei Municipal Zhong Shan Girls High School in senior high school.</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.830664888923!2d121.53894599999998!3d24.9718753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346801f5a5761a71%3A0xb01aa368668cd285!2z5paw5YyX5biC56eB56uL5bSH5YWJ6auY57Sa5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1668858285837!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14458.218081636953!2d121.52928212989067!3d25.049187843442073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9621a328d0b%3A0xd41b7f8de76ad487!2z6Ie65YyX5biC56uL5Lit5bGx5aWz5a2Q6auY57Sa5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1668858326877!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h1><br></h1>
+        <h1 class="g">Hobby</h1>
+        <div class="center">
+            <h4>Although not singing well, I loved singing when I was little, and I joined the school choir in both elementary school and high school. </h4>
+            <h4>I also loved to play badminton, this is the only sport that I was good at.
+                Not only me, but all of my family members loved to play badminton, this was a sport that we played every week when I was little.
+            </h4>
+        </div>
+        <h1><br></h1>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
